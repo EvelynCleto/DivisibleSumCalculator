@@ -1,6 +1,5 @@
 # 🚀 Divisible Sum Calculator
 
-![Banner](https://github.com/matiassingers/awesome-readme)
 
 Este repositório contém um projeto simples que calcula a soma de todos os números menores que um número específico e que são divisíveis por 3 ou 5. O projeto foi implementado em duas linguagens de programação: Dart e JavaScript.
 
