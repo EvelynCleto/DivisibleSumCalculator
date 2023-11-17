@@ -1,15 +1,17 @@
 // Função para calcular a soma dos números divisíveis por 3 ou 5
 function somatorio(n) {
     let soma = 0; // Inicializa a variável soma
-    // Loop de 0 até n
+    let numeros = []; // Inicializa a lista de números
+    // Loop de 0 até n (exclusivo)
     for(let i = 0; i < n; i++) {
-        // Se o número for divisível por 3 ou 5, adicione-o à soma
+        // Se o número for divisível por 3 ou 5, adicione-o à soma e à lista de números
         if(i % 3 === 0 || i % 5 === 0) {
             soma += i;
+            numeros.push(i);
         }
     }
-    // Retorne a soma
-    return soma;
+    // Retorne a soma e a lista de números
+    return {soma: soma, numeros: numeros};
 }
 
 // Função para verificar se o input é um número inteiro
@@ -26,8 +28,10 @@ while(true) {
     let num = prompt("Digite um número:");
     // Se o número for um inteiro positivo, calcule a soma
     if(isInt(num) && num > 0) {
-        // Exibe a soma
-        alert(`Soma: ${somatorio(num)}`);
+        // Calcula a soma e obtém a lista de números
+        let resultado = somatorio(num);
+        // Exibe a soma e a lista de números
+        alert(`Soma: ${resultado.soma}. Resultante do somatório dos números ${resultado.numeros.join(', ')} que são menores que ${num}.`);
         // Pergunta ao usuário se ele deseja continuar
         let continuar = prompt("Continuar? (S/N)");
         // Se o usuário não desejar continuar, interrompe o loop
