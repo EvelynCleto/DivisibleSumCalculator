@@ -7,7 +7,7 @@ Este repositório contém um projeto simples que calcula a soma de todos os núm
 
 ### Dart
 
-1. Instale o Dart SDK se ainda não o tiver. Você pode baixar o Dart SDK aqui.
+1. Instale o Dart SDK se ainda não o tiver. 
 2. Clone este repositório para o seu computador local.
 3. Navegue até a pasta do projeto no terminal.
 4. Execute o arquivo Dart com o seguinte comando:
